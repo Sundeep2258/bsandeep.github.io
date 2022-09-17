@@ -1,0 +1,48 @@
+@import "variables";
+
+.technolgy {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: $white;
+  font-family: $font;
+}
+.tech-head {
+  color: $tech-head;
+  font-size: 78px;
+  padding-bottom: 20px;
+  font-family: Brush Script MT;
+}
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+.icon {
+  width: 150px;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .technolgy {
+    display: flex;
+    padding: 8%;
+    background-color: $tech-bg;
+  }
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+  }
+  .tech-head {
+    color: $tech-head;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: $font;
+  }
+  .icon {
+    width: 50px;
+  }
+}

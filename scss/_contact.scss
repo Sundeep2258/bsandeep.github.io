@@ -1,0 +1,14 @@
+@import "variables";
+
+.footer-section {
+  display: flex;
+  padding: 5% 5%;
+  background-color: $foot-bg;
+  font-family: Brush Script MT;
+}
+
+.foot-head {
+  color: $white;
+  justify-content: flex-start;
+  font-size: 78px;
+}

@@ -1,0 +1,196 @@
+@import "variables";
+
+//mixins
+@mixin flexing-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+@mixin flexing-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+@mixin card-css {
+  height: 30vh;
+  // background-size: cover;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 20px;
+  box-shadow: 5px 5px rgb(30, 119, 119);
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-color: $project-bg;
+  font-family: Brush Script MT;
+}
+
+.pro-head {
+  font-size: 78px;
+
+  color: rgb(8, 2, 43);
+}
+// card-css
+.project-cards-section {
+  @include flexing-row;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+}
+.img {
+  width: 500px;
+  height: 350px;
+}
+.project-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1 {
+  background-image: linear-gradient(
+    to right rgb(238, 234, 234),
+    rgb(236, 195, 195)
+  );
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  padding: 15px;
+  border-radius: 20px;
+  @include flexing-column;
+  box-shadow: 5px 5px 5px 5px rgb(30, 119, 119);
+}
+
+.card-link {
+  width: 70%;
+  height: 10vh;
+  font-size: 48px;
+  background-color: $button-color;
+  text-align: center;
+  @include flexing-column;
+  color: $text-color;
+  border-radius: 16px;
+}
+.card-link:hover {
+  background-color: $tech-head;
+  color: $button-color;
+}
+.project-card {
+}
+.para {
+  font-size: 48px;
+  color: $button-color;
+  padding: 5px 15px 35px;
+}
+@media (max-width: 768px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    background-color: $project-bg;
+  }
+
+  .pro-head {
+    font-size: 48px;
+    color: navajowhite;
+  }
+
+  // card-css
+  .project-cards-section {
+    @include flexing-column;
+  }
+  .project-card-section {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    @include card-css;
+  }
+  .img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .card-1 {
+    background-image: linear-gradient(
+      to right rgb(238, 234, 234),
+      rgb(236, 195, 195)
+    );
+    @include card-css;
+  }
+
+  .card-link {
+    width: 100%;
+    height: 8vh;
+    font-size: 24px;
+    font-weight: 900;
+    color: $text-color;
+    background-color: $button-color;
+    text-align: center;
+    @include flexing-column;
+  }
+  .project-card {
+    // margin: 10px;
+  }
+}
+
+@media (max-width: 468px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    background-color: $project-bg;
+  }
+
+  .pro-head {
+    font-size: 48px;
+    color: navajowhite;
+  }
+
+  // card-css
+  .project-cards-section {
+    @include flexing-column;
+  }
+  .project-card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    @include card-css;
+  }
+  .img {
+    width: 280px;
+    height: 150px;
+  }
+
+  .card-1 {
+    background-image: linear-gradient(
+      to right rgb(238, 234, 234),
+      rgb(236, 195, 195)
+    );
+    @include card-css;
+  }
+
+  .card-link {
+    width: 100%;
+    height: 8vh;
+    font-size: 24px;
+    font-weight: 900;
+    color: $text-color;
+    background-color: $button-color;
+    text-align: center;
+    @include flexing-column;
+  }
+}

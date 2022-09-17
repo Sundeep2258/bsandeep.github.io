@@ -1,0 +1,142 @@
+@import "variables";
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-box {
+  display: flex;
+  justify-content: flex-start;
+}
+.mail-link {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.mail-link:hover {
+  color: springgreen;
+  transition: 0.3s ease;
+}
+
+.mobile {
+  display: flex;
+}
+.mobile:hover {
+  color: rgb(41, 136, 219);
+  cursor: pointer;
+}
+.call {
+  font-size: 28px;
+  color: aliceblue;
+  margin-right: 15px;
+}
+.phone-num {
+  color: aliceblue;
+  font-size: 28px;
+}
+.phone-num:hover {
+  color: rgb(41, 136, 219);
+}
+.socialmedia-logo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkdin {
+  font-size: 56px;
+  margin: 8px;
+}
+.linkdin:hover {
+  color: rgb(39, 50, 202);
+  transition: 0.3s ease-in;
+}
+.git {
+  font-size: 56px;
+  margin: 8px;
+}
+.git:hover {
+  color: rgb(1, 1, 10);
+  transition: 0.3s ease-in;
+}
+.insta {
+  font-size: 56px;
+  margin: 8px;
+}
+.insta:hover {
+  transition: 0.3s ease-in-out;
+  color: rgb(158, 14, 14);
+}
+.foo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.copy {
+  display: flex;
+  margin-top: 50px;
+}
+.copy:hover {
+  cursor: pointer;
+  color: black;
+}
+.creater {
+  color: $white;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.created-by {
+  color: rgb(255, 174, 0);
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mail-box {
+    display: flex;
+  }
+  .mail-link {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: "Sofia", sans-serif;
+  }
+  .mail-link:hover {
+    color: springgreen;
+    transition: 0.3s ease;
+  }
+
+  .mobile {
+    display: flex;
+    font-family: "Sofia", sans-serif;
+  }
+  .mobile:hover {
+    color: aqua;
+    cursor: pointer;
+  }
+  .call {
+    font-size: 20px;
+    color: aliceblue;
+    margin-right: 15px;
+  }
+  .phone-num {
+    color: aliceblue;
+    font-size: 15px;
+  }
+  .insta {
+    font-size: 40px;
+    margin: 8px;
+  }
+  .linkdin {
+    font-size: 40px;
+    margin: 8px;
+  }
+  .git {
+    font-size: 40px;
+    margin: 8px;
+  }
+}

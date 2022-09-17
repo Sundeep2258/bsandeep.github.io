@@ -1,0 +1,42 @@
+@import "variables";
+
+.about {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(3, 8, 24);
+}
+.about-head {
+  color: $about-head;
+  font-size: 78px;
+  font-family: $font;
+}
+.about-para {
+  color: $about-para;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: Brush Script MT;
+}
+
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    padding: 8%;
+    justify-content: flex-start;
+  }
+
+  .about-head {
+    color: $about-head;
+    font-size: 48px;
+    font-family: $font;
+  }
+  .about-para {
+    color: $about-para;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Lucida Sans", "Lucida Grande";
+    font-style: italic;
+  }
+}

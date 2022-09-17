@@ -1,0 +1,70 @@
+.home-section {
+  display: flex;
+  padding: 10%;
+  height: 70%;
+  background-color: $home-bg;
+}
+
+// .section-2 {
+//   order: 1;
+// }
+.my-image {
+  width: 250px;
+  border-radius: 60%;
+  margin-left: 75px;
+  padding-bottom: 20px;
+}
+.name {
+  margin-top: 100px;
+  font-size: 68px;
+  color: #021116;
+  font-family: Lucida Handwriting;
+}
+.role {
+  font-size: 28px;
+  color: #060707;
+  font-family: Brush Script MT;
+}
+@media (max-width: 768px) {
+  .home-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20%;
+    height: 70%;
+    background-color: $home-bg;
+  }
+  .my-image {
+    width: 180px;
+    border-radius: 100%;
+    margin-left: 50px;
+  }
+  .name {
+    font-size: 30px;
+    color: #071114;
+    gap: 6px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .role {
+    font-size: 20px;
+    color: #091013;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+@media (max-width: 412px) {
+  .name {
+    margin-top: 25px;
+    font-size: 20px;
+    color: #071114;
+    gap: 6px;
+    font-family: GVerdana, Geneva, Tahoma, sans-serif;
+  }
+  .role {
+    font-size: 24px;
+    color: #091013;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
